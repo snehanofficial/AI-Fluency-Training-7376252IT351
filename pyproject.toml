@@ -1,0 +1,21 @@
+[project]
+name = "30-days-of-ai-fluency"
+version = "0.1.0"
+description = "30 Days AI Fluency Training at BIT"
+readme = "README.md"
+authors = [
+    { name = "Snehan S", email = "snehankgs@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openai>=1.40.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+30-days-of-ai-fluency = "30_days_of_ai_fluency:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
